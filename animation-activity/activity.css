@@ -9,6 +9,7 @@
   animation-name: middle;
   animation-duration: .1s;
   animation-fill-mode: forwards;
+  display: none;
 }
 
 .hamburger:hover > div:nth-child(3){
@@ -28,8 +29,11 @@ nav {
 }
 
 @keyframes top {
-  from {}
-  to {}
+  from {
+  }
+  to {
+    transform: translateY(25px) rotate(45deg);
+  }
 }
 
 @keyframes middle {
@@ -39,5 +43,9 @@ nav {
 
 @keyframes bottom {
   from {}
-  to {}
+  to {
+    transform: translateY(-25px) rotate(-45deg);
+  }
 }
+
+/* This is a little bit difficult at first. But so glad I could understand and get it to work. */
